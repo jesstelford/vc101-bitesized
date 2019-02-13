@@ -1,0 +1,93 @@
+/* spreadsheet: https://docs.google.com/spreadsheets/d/1z5SjJGeFQ1TG3NRVAmU4pEblI3DzOzYR7XpcM_YPObU/edit#gid=0 */
+
+/* 
+
+1. Design and code the site. --> check out the coinbase earn page for design inspo for front page.
+2. Integrate a database. (Google Spreadsheet)
+3. Deploy the site. (Netlify, GitHub)
+4. Connect to main site? (vc101.team/#online-course)
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Asap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/* COURSE PAGE */
+
+body {
+    background-color: #292C34;
+}
+
+header {
+    background: url('img/banner.jpg');
+    background-color: #292C34;
+    padding: 20px;
+}
+
+header h1 {
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    line-height: 1em;
+    text-align: center;
+    margin-top: 30px;
+    transform: translateY(-50%);
+    text-shadow: 0 1px 0 #e4adad, 0 2px 0 #e1a6a6, 0 3px 0 #df9e9e, 0 4px 0 #dc9696, 0 5px 0 #da8f8f, 0 6px 0 #d78787, 0 7px 0 #d58080, 0 8px 0 #d27878, 0 0 5px rgba(237, 154, 154, 0.05), 0 -1px 3px rgba(237, 154, 154, 0.2), 0 9px 9px rgba(237, 154, 154, 0.5), 0 12px 12px rgba(237, 154, 154, 0.5), 0 15px 15px rgba(237, 154, 154, 0.5);
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    width: 500px;
+    height: 250px;
+    background-color: #292C34;
+}
+
+.container p {
+    font-family: 'Asap', sans-serif;
+    color: #fff;
+    margin-top: 50px;
+}
+
+iframe {
+    height: 100%;
+    pointer-events: none;
+}
+
+.chevron {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.left {
+    position: absolute;
+    left: 280px;
+}
+    
+.right {
+    position: absolute;
+    right: 280px;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.left:hover .fa-chevron-left,
+.right:hover .fa-chevron-right {
+    color: orange;
+    cursor: pointer;
+}
