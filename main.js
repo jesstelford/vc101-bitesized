@@ -49,17 +49,19 @@ function init() {
         simpleSheet: true
     })
 }
-window.addEventListener('DOMContentLoaded', init)
+window.addEventListener('DOMContentLoaded', init)*/
 
-chevronLeft.addEventListener('click', function () {
-    console.log('left working');
+// Animate smooth scroll
+$('#get-started').on('click', function () {
+    const sectionLesson = $('#section-lesson').position().top;
+
+    $('html, body').animate({
+        scrollTop: sectionLesson
+    }, 900);
 });
 
 
-chevronRight.addEventListener('click', function () {
-    console.log('right also working');
-});*/
-
+// Fetch data for the course page
 function init() {
     Tabletop.init({
         key: 'https://docs.google.com/spreadsheets/d/121xBU8bEERskqbCZMC6eZ0X21Khg8o9nJbSCCKEtyuI/pubhtml',
@@ -92,3 +94,4 @@ function init() {
     })
 }
 window.addEventListener('DOMContentLoaded', init)
+

@@ -18,6 +18,28 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-size: 16px;
+}
+
+/* BUTTON CLASS */
+.btn {
+    height: 58px;
+    font-size: 16px;
+    font-family: 'Asap';
+    padding: 10px 16px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 82, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    position: relative;
+    width: auto;
+    font-weight: 600;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 1000ms;
 }
 
 /* INDEX PAGE */
@@ -73,6 +95,10 @@ main {
     margin-left: 200px;
 }
 
+.landing-box {
+    height: 100vh;
+}
+
 .landing-box h1 {
     font-size: 54px;
     font-family: 'Asap';
@@ -99,23 +125,12 @@ main {
 
 }
 
-.landing-box a {
-    height: 58px;
-    font-size: 16px;
-    font-family: 'Asap';
-    padding: 10px 16px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(22, 82, 240);
-    border-width: 1px;
-    border-style: solid;
-    border-color: transparent;
-    border-image: initial;
-    position: relative;
-    width: auto;
-    font-weight: 600;
-    margin: 0;
-    cursor: pointer;
-    border-radius: 4px;
+.landing-box a:hover {
+    background-color: rgb(18, 72, 209);
+}
+
+.lesson-box {
+    height: 100vh;
 }
 
 .lesson-box h1 {
@@ -130,7 +145,7 @@ main {
     width: 800px;
     color: rgb(88, 112, 136);
     line-height: 24px;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Asap';
     display: block;
     margin-block-start: 1em;
@@ -142,6 +157,10 @@ main {
 }
 
 .lesson-one {
+    display: grid;
+    grid-template: 
+    "img lesson-content" min-content
+    "img a" auto / 1fr 1fr;
     width: 85%;
     height: auto;
     border-width: 1px;
@@ -156,3 +175,57 @@ main {
 .lesson-one:hover {
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
+
+.lesson-one img {
+    grid-area: img;
+    border-radius: 2% 0% 0% 2%;
+}
+
+.lesson-one .lesson-content {
+    grid-area: lesson-content;
+    margin-left: 16px;
+    margin-top: 32px;
+}
+
+.lesson-one h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #000;
+    font-family: 'Asap';
+}
+
+.lesson-one p {
+    font-size: 1rem;
+    color: rgb(88, 112, 136);
+    font-family: 'Asap';
+    width: 85%;
+}
+
+.lesson-one a {
+    grid-area: a;
+    width: 80px;
+    height: 48px;
+    margin-left: 16px;
+    margin-top: 80px;
+    transition: all 1000ms;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    padding-right: 10px;
+    letter-spacing: 2px;
+}
+
+.lesson-one a:hover {
+    background-color: rgb(18, 72, 209);
+}
+
+
+/* use max-width for mobile media query
+
+.lesson-one img {
+    grid-area: img;
+    border-radius: 2% 0% 0% 2%;
+    max-width: 100%;
+}
+
+*/
