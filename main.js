@@ -72,17 +72,17 @@ function init() {
                 var testgif = document.getElementById('gif');
 
                 out.innerHTML = data[i].content;
-                testgif.innerHTML = "<iframe src=" + data[i].img + " frameBorder='0' scrolling='no' class='gif'>" + "</iframe>";
+                testgif.innerHTML = "<img src=" + data[i].img + " scrolling='no' class='gif'>";
                 return {
                     prev: function () {
                         i && i--;
                         out.innerHTML = data[i].content;
-                        testgif.innerHTML = "<iframe src=" + data[i].img + " frameBorder='0' scrolling='no' class='gif'>" + "</iframe>";
+                        testgif.innerHTML = "<img src=" + data[i].img + " scrolling='no' class='gif'>";
                     },
                     next: function () {
                         i + 1 < data.length && i++;
                         out.innerHTML = data[i].content;
-                        testgif.innerHTML = "<iframe src=" + data[i].img + " frameBorder='0' scrolling='no' class='gif'>" + "</iframe>";
+                        testgif.innerHTML = "<img src=" + data[i].img + " scrolling='no' class='gif'>";
                     }
                 }
             }(0);

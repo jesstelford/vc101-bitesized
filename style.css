@@ -274,7 +274,7 @@ footer ul li a {
 
 /* Media Queries */
 
-/* Mobile */
+/* Large Mobile Screen */
 @media only screen and (max-width: 580px) {
     
     header .header-brand {
