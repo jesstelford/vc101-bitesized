@@ -211,6 +211,7 @@ main {
     color: rgb(88, 112, 136);
     font-family: 'Asap';
     width: 85%;
+    margin-top: 10px;
 }
 
 .lesson-one a {
