@@ -256,6 +256,7 @@ footer ul li a {
 
     .data-content {
         grid-area: data-content;
+        margin: 0 auto;
     }
 
     .data-content .gif {
