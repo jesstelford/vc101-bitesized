@@ -94,8 +94,8 @@ header nav ul li a {
 .container {
     display: grid;
     grid-template: 
-        "data-content syllabus-outline" min-content
-        "data-content chevron" auto / 1fr 2fr;
+        "syllabus-outline data-content " auto
+        "chevron data-content" auto / 1fr 2fr;
     padding: 20px;
     width: 75%;
     margin: 0 auto;
@@ -107,11 +107,11 @@ header nav ul li a {
 
 .syllabus-outline {
     grid-area: syllabus-outline;
-    border-left: 2px solid rgb(245, 247, 248);
+    border-right: 2px solid rgb(245, 247, 248);
     background-color: #fff;
     text-align: left;
     border-radius: 2% 0% 0% 2%;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .syllabus-outline h2 {
@@ -119,13 +119,11 @@ header nav ul li a {
     color: #000;
     font-family: 'Asap';
     line-height: 25px;
-    margin: 10px 0 20px 30px;
-    border-bottom: 1px solid orange;
+    margin: 10px 0 20px 0px;
+    border-bottom: 2px solid orange;
+    width: min-content;
 }
 
-.syllabus-outline ul {
-    margin-left: 30px;
-}
 
 .syllabus-outline ul li {
     list-style: none;
@@ -137,10 +135,11 @@ header nav ul li a {
 .data-content {
     grid-area: data-content;
     background-color: #fff;
+    margin-left: 20px;
 }
 
 .data-content .gif {
-    width: 500px;
+    width: 100%;
     height: 300px;
     pointer-events: none;
     margin: 0 auto;
@@ -164,11 +163,11 @@ header nav ul li a {
     margin-top: 50px;
 }
 
-.left {
+.chevron .left {
     float: left;
 }
     
-.right {
+.chevron .right {
     float: right;
 }
 
