@@ -2,7 +2,7 @@
 
 /* 
 
-1. Design and code the site. --> check out the coinbase earn page for design inspo for front page.
+1. Design and code the site. 
 2. Integrate a database. (Google Spreadsheet)
 3. Deploy the site. (Netlify, GitHub)
 4. Connect to main site? (vc101.team/#online-course)
@@ -20,6 +20,8 @@
     text-decoration: none;
     font-size: 16px;
 }
+
+
 
 /* BUTTON CLASS */
 .btn {
@@ -42,13 +44,13 @@
     transition: all 1000ms;
 }
 
-/* INDEX PAGE */
 
+
+/* INDEX PAGE */
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
-    right: 0;
-    left: 0;
+    z-index: 1;
     background-color: #fff;
     width: 100%;
     height: 80px;
@@ -96,7 +98,7 @@ main {
 }
 
 .landing-box {
-    height: 100vh;
+    min-height: calc(100vh - 80px);
 }
 
 .landing-box img {
@@ -111,14 +113,19 @@ main {
     z-index: -1;  
 }
 
-.landing-box h1 {
+.landing-box h1,
+.landing-box h2 {
     font-size: 54px;
     font-family: 'Asap';
+    font-weight: 100;
     color: rgb(17, 51, 85);
     line-height: 64px;
     margin: 13px 0px;
 }
 
+.landing-box h2 {
+    font-weight: 900;
+}
 
 .landing-box p {
     color: rgb(88, 112, 136);
@@ -134,7 +141,6 @@ main {
     margin-bottom: 40px;
     font-weight: 400;
     width: 300px;
-
 }
 
 .landing-box a:hover {
@@ -142,7 +148,8 @@ main {
 }
 
 .lesson-box {
-    height: 100vh;
+    min-height: calc(100vh - 80px);
+    padding-top: 80px;
 }
 
 .lesson-box h1 {
@@ -232,11 +239,11 @@ main {
     background-color: rgb(18, 72, 209);
 }
 
-/* Footer */
 
+
+/* FOOTER */
 footer {
     border-top: 2px solid rgb(245, 247, 248);
-    
 }
 
 footer ul {
@@ -245,7 +252,6 @@ footer ul {
     margin-top: 20px;
     margin-bottom: 50px;
     margin-left: 200px;
-    
 }
 
 footer ul li {
@@ -269,11 +275,11 @@ footer ul li a {
     margin-right: 170px;
     font-family: 'Asap';
     font-size: 0.9rem;
-    
 }
 
 
-/* Media Queries */
+
+/* MEDIA QUERIES */
 
 /* Large Mobile Screen */
 @media only screen and (max-width: 580px) {
@@ -293,7 +299,6 @@ footer ul li a {
     
     header nav ul li a {
         font-size: 14px;
-        
     }
 
     main {

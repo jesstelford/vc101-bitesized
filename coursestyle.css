@@ -2,7 +2,7 @@
 
 /* 
 
-1. Design and code the site. --> check out the coinbase earn page for design inspo for front page.
+1. Design and code the site.
 2. Integrate a database. (Google Spreadsheet)
 3. Deploy the site. (Netlify, GitHub)
 4. Connect to main site? (vc101.team/#online-course)
@@ -22,8 +22,8 @@
 }
 
 
-/* COURSE PAGE */
 
+/* COURSE PAGE */
 body {
     background-color: rgb(245, 247, 248);
     
@@ -121,7 +121,6 @@ header nav ul li a {
     line-height: 25px;
     margin: 10px 0 20px 30px;
     border-bottom: 1px solid orange;
-    width: min-content;
 }
 
 .syllabus-outline ul {
@@ -186,7 +185,9 @@ header nav ul li a {
     cursor: pointer;
 }
 
-/* Footer */
+
+
+/* FOOTER */
 footer {
     margin-top: 30px;
     border-top: 2px solid rgb(234, 239, 241);  
@@ -225,7 +226,8 @@ footer ul li a {
 }
 
 
-/* Media Queries */
+
+/* MEDIA QUERIES */
 
 /* Large Mobile Screen */
 @media only screen and (max-width: 580px) {
@@ -260,7 +262,6 @@ footer ul li a {
     .data-content .gif {
         width: 100%;
         border-radius: 2% 2% 0% 0%;
-        position: static;
     }
 
     .data-content p {
